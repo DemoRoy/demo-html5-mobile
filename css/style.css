@@ -1,11 +1,11 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 625%;
+    font-size: 625%;
 }
 
 body,
@@ -24,8 +24,8 @@ fieldset {
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei UI', 'Microsoft YaHei', SimHei, '\5B8B\4F53', simsun, sans-serif;
+    font-size: .16rem;
     background-color: #fff;
-    font-size: 0.16rem;
 }
 
 ul,
@@ -38,8 +38,8 @@ a {
 }
 
 img {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 .none {
@@ -47,27 +47,26 @@ img {
 }
 
 .clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: '';
 }
-
 
 /*======头部======*/
 
 #header {
-	width: 100%;
-	height: 0.45rem;
-	background: #333;
-	position: fixed;
-	top: 0;
-	z-index: 9999;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: .45rem;
+    background: #333;
 }
 
 #header .link {
-    line-height: 0.45rem;
-    height: 0.45rem;
+    line-height: .45rem;
+    height: .45rem;
     color: #eee;
 }
 
@@ -75,7 +74,7 @@ img {
     float: left;
     width: 25%;
     text-align: center;
-    letter-spacing: 0.02rem;
+    letter-spacing: .02rem;
 }
 
 #header .link a {
@@ -93,53 +92,53 @@ img {
 /*===轮播图===*/
 
 #adver {
-	max-width: 6.4rem;
-	margin: 0 auto;
-	padding: 0.45rem 0 0 0;
+    max-width: 6.4rem;
+    margin: 0 auto;
+    padding: .45rem 0 0 0;
 }
 
 /*===搜索区===*/
 
 #search {
-    max-width: 6.4rem; 
-    height: 0.4rem;
-    margin: 0 auto;
-    padding: 0.06rem 0 0 0;
-    background: #ddd;
-    text-align: center;
     position: relative;
+    max-width: 6.4rem;
+    height: .4rem;
+    margin: 0 auto;
+    padding: .06rem 0 0 0;
+    text-align: center;
+    background: #ddd;
 }
 
 #search .search {
-	display: block;
+    font-size: .14rem;
+    display: block;
     width: 95%;
-    height: 0.27rem;
+    height: .27rem;
     margin: 0 auto;
-    font-size: 0.14rem;
-    padding: 0 0.05rem;
+    padding: 0 .05rem;
     color: #666;
     border: none;
-    border-radius: 0.04rem;
-    outline: none; 
+    border-radius: .04rem;
+    outline: none;
     background: #fff;
 }
 
-#search .button	{
-	width: 0.5rem;
-	height: 0.27rem;
-	font-size: 0.14rem;
-	text-align: center;
-	color: #666;
-	border-top-right-radius: 0.04rem;
-	border-bottom-right-radius: 0.04rem;
-    border: none;
-    outline: none; 
-    background: #eee;
+#search .button {
+    font-size: .14rem;
     position: absolute;
+    top: .06rem;
     right: 2%;
-    top: 0.06rem;
+    width: .5rem;
+    height: .27rem;
     cursor: pointer;
-    letter-spacing: 0.01rem;
+    text-align: center;
+    letter-spacing: .01rem;
+    color: #666;
+    border: none;
+    border-top-right-radius: .04rem;
+    border-bottom-right-radius: .04rem;
+    outline: none;
+    background: #eee;
 }
 
 /*===旅游区===*/
@@ -150,83 +149,83 @@ img {
 }
 
 #tour .center {
-	text-align: center;
+    text-align: center;
 }
 
 #tour .center h2 {
-    font-size: 0.26rem;
-    margin: 0.1rem 0;
-    letter-spacing: 0.02rem;
+    font-size: .26rem;
+    margin: .1rem 0;
+    letter-spacing: .02rem;
     color: #666;
 }
 
 #tour .center p {
-    margin: 0.1rem 0;
+    margin: .1rem 0;
     color: #666;
 }
 
 #tour .container figure {
-	width: 50%;
-	float: left;
-	background: #eee;
-	margin: 0 0 0.05rem 0;
-	font-size: 0.16rem;
-	position: relative;
+    font-size: .16rem;
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 0 0 .05rem 0;
+    background: #eee;
 }
 
 #tour figure img {
-	padding: 0.02rem;
-	border-radius: 0.04rem;
+    padding: .02rem;
+    border-radius: .04rem;
 }
 
 #tour figcaption {
-	color: #666;
-	font-size: 0.16rem;
-	padding: 0.02rem 0.05rem;
+    font-size: .16rem;
+    padding: .02rem .05rem;
+    color: #666;
 }
 
 #tour h3 {
-	font-weight: normal;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #tour p {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #tour .info {
-	padding:0.1rem 0 0 0;
-	font-size: 0.16rem;
+    font-size: .16rem;
+    padding: .1rem 0 0 0;
 }
 
 #tour .price {
-	color: #f60;
+    color: #f60;
 }
 
 #tour .price strong {
-	letter-spacing: 0.01rem;
+    letter-spacing: .01rem;
 }
 
 #tour .sta {
-	float: right;
-	position: relative;
-	right: 0.05rem;
-	font-style: normal;
-	font-size: 0.14rem;
+    font-size: .14rem;
+    font-style: normal;
+    position: relative;
+    right: .05rem;
+    float: right;
 }
 
 #tour .type {
-    font-size: 0.14rem;
-    line-height: 0.25rem;
+    font-size: .14rem;
+    line-height: .25rem;
     position: absolute;
-    top: 0.02rem;
-    left: 0.02rem;
-    width: 0.9rem;
-    height: 0.22rem;
+    top: .02rem;
+    left: .02rem;
+    width: .9rem;
+    height: .22rem;
     text-align: center;
     letter-spacing: 1px;
     color: #fff;
@@ -235,102 +234,224 @@ img {
 }
 
 #headline {
-	max-width: 6.4rem;
-	margin: 0 auto;
-	padding: 0.45rem 0 0 0;
-	position: relative;
+    position: relative;
+    max-width: 6.4rem;
+    margin: 0 auto;
+    padding: .45rem 0 0 0;
 }
 
 #headline .center {
-	position: absolute;
-	top: 50%;
-	left: 10%;
-	color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #eee;
 }
 
 #headline .center h2 {
-	font-size: .22rem;
-	letter-spacing: .01rem;
+    font-size: .22rem;
+    letter-spacing: .01rem;
 }
 
 #headline .center p {
-	font-size: .16rem;
-
+    font-size: .16rem;
 }
 
 .list {
-	max-width: 6.4rem;
-	margin: .15rem auto;
-	padding: 0 .1rem;
-	color: #666;
-	font-size: .16rem;
+    font-size: .16rem;
+    max-width: 6.4rem;
+    margin: .15rem auto;
+    padding: 0 .1rem;
+
+    color: #666;
 }
 
 .list h2 {
-	font-size: .2rem;
-	padding: .1rem 0;
-	margin: .1rem 0;
-	border-bottom: .01rem dashed #999;
+    font-size: .2rem;
+    margin: .1rem 0;
+    padding: .1rem 0;
+    border-bottom: .01rem dashed #999;
 }
 
 /*======资讯页======*/
 
 .information figure {
-	margin: .15rem 0 0 0;
-	position: relative;
+    position: relative;
+    margin: .15rem 0 0 0;
 }
 
 .information figure:after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: '';
 }
 
 .information figure img {
-	width: 50%;
-	float: left;
+    float: left;
+    width: 50%;
 }
 
 .information figure figcaption {
-	width: 48%;
-	float: right;
+    float: right;
+    width: 48%;
 }
 
 .information .title {
-	border: none;
-	padding: 0 0 .05rem 0;
-	margin: 0;
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-} 
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 .05rem 0;
+    border: none;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 
 .information .small-title {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .information .price {
-	color: #f60;
-	position: absolute;
-	bottom: 0;
+    position: absolute;
+    bottom: 0;
+    color: #f60;
 }
 
 .information .price strong {
-	font-size: .26rem;
-	letter-spacing: .01rem;
+    font-size: .26rem;
+    letter-spacing: .01rem;
+}
+
+/*======票务======*/
+
+.ticket fieldset {
+    border: none;
+}
+
+.ticket .type {
+    font-size: .16rem;
+    margin: .1rem 0;
+}
+
+.ticket .type mark {
+    margin: 0 .1rem 0 .16rem;
+    padding: .05rem .08rem;
+    color: #fff;
+    border-radius: .05rem;
+    background: #458b00;
+}
+
+.ticket .form {
+    font-size: .16rem;
+}
+
+.ticket .form p {
+    margin: .1rem 0;
+}
+
+.ticket .form label {
+    display: block;
+    margin: 0 0 .05rem 0;
+}
+
+.ticket .form input {
+    font-size: .14rem;
+    width: 97%;
+    height: .3rem;
+    padding: .05rem;
+    border: .01rem solid #ccc;
+    border-radius: .05rem;
+    background: #fff;
+}
+
+.ticket .submit {
+    font-size: .16rem;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    padding: .1rem;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .02rem;
+    color: #fff;
+    border: none;
+    border-radius: .05rem;
+    background: #f60;
+}
+
+.ticket .new {
+    margin: .2rem 0 0 0;
+}
+
+.ticket .new ul {
+    margin: .2rem 0 0 0;
+}
+
+.ticket .new li {
+    display: inline-block;
+    padding: .05rem .1rem;
+}
+
+.ticket .new li:first-child {
+    padding-left: 0;
+}
+
+.ticket .new li:nth-child(2) {
+    color: #fff;
+    border-radius: .05rem;
+    background: #458b00;
+}
+
+.ticket table {
+    width: 100%;
+    margin: .2rem 0 0 0;
+    border-collapse: collapse;
+    border: .01rem solid #ddd;
+}
+
+.ticket tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.ticket tr:hover,
+.ticket tr.title {
+    background: #eee;
+}
+
+.ticket th {
+    padding: .1rem 0;
+    border-bottom: .01rem solid #ddd;
+}
+
+.ticket td {
+    padding: .1rem 0;
+    text-align: center;
+    border-bottom: .01rem solid #ddd;
+}
+
+.ticket td.price {
+    color: #f60;
+}
+
+.ticket .reserve {
+    padding: .05rem .08rem;
+    color: #fff;
+    border-radius: .05rem;
+    background: #f60;
+}
+
+.ticket .more2 {
+    color: #666;
 }
 
 /*======关于======*/
 
 .about p {
-	line-height: 2;
-	margin: .2rem 0;
-	text-indent: .32rem;
+    line-height: 2;
+    margin: .2rem 0;
+    text-indent: .32rem;
 }
 
 .about address {
@@ -348,71 +469,76 @@ img {
 #footer {
     max-width: 6.4rem;
     margin: 0 auto;
-    padding: 0.1rem 0;
-    background: #222;
+    padding: .1rem 0;
     text-align: center;
     color: #777;
+    background: #222;
 }
 
 #footer p {
-	margin: 0 0 0.05rem 0;
+    margin: 0 0 .05rem 0;
 }
 
 /* 媒体查询--大于480px小于640px */
 
 @media (min-width: 480px) and (max-width: 640px) {
-	#tour h2,
-	.information .price strong {
-		font-size: 0.26rem;
-	}
+    #tour h2,
+    .information .price strong {
+        font-size: .26rem;
+    }
 
-	#tour .center p,
-	#footer, 
-	#tour figcaption, 
-	#tour .info, 
-	#tour .type, 
-	#headline .center p,
-	.list {
-		font-size: 0.16rem;
-	}
+    #tour .center p,
+    #footer,
+    #tour figcaption,
+    #tour .info,
+    #tour .type,
+    #headline .center p,
+    .list {
+        font-size: .16rem;
+    }
 
-	#headline .center h2 {
-		font-size: .22rem;
-	}
+    #headline .center h2 {
+        font-size: .22rem;
+    }
 
-	.list h2 {
-		font-size: .20rem;
-	}
+    .list h2 {
+        font-size: .20rem;
+    }
 }
 
 /* 媒体查询--小于480px */
 
 @media (max-width: 480px) {
-	#tour h2,
-	.information .price strong {
-    	font-size: 0.20rem;
-	}
- 
-	#tour .center p,
-	#tour figcaption, 
-	#tour .info,
-	#headline .center h2,
-	.list {
-		font-size: 0.14rem;
-	}
+    #tour h2,
+    .information .price strong {
+        font-size: .20rem;
+    }
 
-	#footer, #tour .type,
-	#headline .center p {
-		font-size: 0.12rem;
-	}
+    #tour .center p,
+    #tour figcaption,
+    #tour .info,
+    #headline .center h2,
+    .list {
+        font-size: .14rem;
+    }
 
-	#tour .type {
-		width: 0.6rem;
-		height: 0.18rem;
-		line-height: 0.20rem;
-	}
+    #footer,
+    #tour .type,
+    #headline .center p {
+        font-size: .12rem;
+    }
 
-	.list h2 {
-		font-size: .16rem;
-	}
+    #tour .type {
+        line-height: .20rem;
+        width: .6rem;
+        height: .18rem;
+    }
+
+    .list h2 {
+        font-size: .16rem;
+    }
+
+    .min {
+        display: none;
+    }
 }
